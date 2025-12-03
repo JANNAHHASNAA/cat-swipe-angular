@@ -1,0 +1,8 @@
+<div class="summary-container" *ngIf="likedCats">
+  <h2 *ngIf="likedCats.length > 0">You liked {{ likedCats.length }} cats!</h2>
+  <h2 *ngIf="likedCats.length === 0">You didn’t like any cats</h2>
+
+  <div class="liked-cats" *ngIf="likedCats.length > 0">
+    <img *ngFor="let cat of likedCats" [src]="cat" alt="Liked cat" />
+  </div>
+</div>

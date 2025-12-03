@@ -1,0 +1,9 @@
+<div
+  class="card"
+  [class.next-card]="!isTop"
+  [style.transform]="isTop ? transform : null"
+  [style.transition]="transition"
+  [style.z-index]="zIndex"
+>
+  <img [src]="img" alt="cat" draggable="false" />
+</div>

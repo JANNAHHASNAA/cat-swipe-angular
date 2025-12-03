@@ -1,0 +1,20 @@
+.summary-container {
+  text-align: center;     
+  margin-top: 50px;        
+}
+
+.liked-cats {
+  display: grid;                 
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+  gap: 10px;                        
+  justify-items: center;            
+  margin-top: 20px;
+}
+
+.liked-cats img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}

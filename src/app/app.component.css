@@ -1,0 +1,42 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;   
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 450px; /* adjust according to card height */
+}
+
+.buttons-container button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #eee;
+  transition: background-color 0.2s;
+}
+.heart-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* Keep the active button styles */
+.buttons-container button.active.like {
+  background-color: #4caf50;
+  color: white;
+}
+
+.buttons-container button.active.dislike {
+  background-color: #f44336; /* red */
+  color: white;
+}
